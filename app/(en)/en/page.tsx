@@ -75,15 +75,6 @@ const currentProjects: { slug: string; category: string; title: string; descript
     alt: "",
     className: "project-in-progress",
   },
-  {
-    slug: "kulik-tula",
-    category: "IN PROGRESS",
-    title: "Kulik Apartments, Tula",
-    description: "Full renovation of a 37 m² apartment. Work started in November 2026.",
-    image: undefined,
-    alt: "",
-    className: "project-in-progress",
-  },
 ];
 
 const completedProjects: (Omit<(typeof currentProjects)[number], "image"> & { image?: string })[] = [

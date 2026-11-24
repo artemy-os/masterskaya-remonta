@@ -75,15 +75,6 @@ const currentProjects: { slug: string; category: string; title: string; descript
     alt: "",
     className: "project-in-progress",
   },
-  {
-    slug: "kulik-tula",
-    category: "В РАБОТЕ",
-    title: "ЖК «Кулик», г. Тула",
-    description: "Квартира 37 м². Капитальный ремонт жилого помещения. Начало работ — ноябрь 2026 г.",
-    image: undefined,
-    alt: "",
-    className: "project-in-progress",
-  },
 ];
 
 const completedProjects: (Omit<(typeof currentProjects)[number], "image"> & { image?: string })[] = [
