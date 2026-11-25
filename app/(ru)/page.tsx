@@ -71,7 +71,7 @@ const currentProjects: { slug: string; category: string; title: string; descript
     category: "В РАБОТЕ",
     title: "ЖК Новое Летово",
     description: "Капитальный ремонт жилого помещения, квартира 46 м², в процессе выполнения. Фотографии и подробности появятся после завершения этапов работ.",
-    image: undefined,
+    image: "/images/novoe-letovo/7488.webp",
     alt: "",
     className: "project-in-progress",
   },
