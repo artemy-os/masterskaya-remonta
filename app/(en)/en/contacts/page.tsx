@@ -11,7 +11,7 @@ export default function ContactsPage() {
       <p className="project-detail-eyebrow">RENOVATION WORKSHOP</p>
       <h1>Contacts</h1>
       <p className="project-detail-eyebrow">Phone</p>
-      <p className="contacts-phone">+7 (999) 868-96-98</p>
+      <p className="contacts-phone">8 (999) 888-89-69</p>
       <p>Monday–Friday, 10:00–18:00 (Moscow time)</p>
       <a className="project-detail-back" href={basePath + "/contacts/"} hrefLang="ru">Русский</a>
     </div>
