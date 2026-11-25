@@ -172,9 +172,10 @@ export default function Home() {
           <div className="hero-actions">
             <a className="button button-light" href="#services">Our services</a>
             <div className="hero-links">
-              <a className="text-link light-link" href="#process">How we work <span>↓</span></a>
+              <a className="text-link light-link" href="#process">How it works <span>↓</span></a>
               <a className="text-link light-link" href={assetPath("/en/news/")}>Blog</a>
               <a className="text-link light-link" href="#projects">Projects</a>
+              <a className="text-link light-link" href={assetPath("/en/contacts/")}>Contacts</a>
             </div>
           </div>
         </div>

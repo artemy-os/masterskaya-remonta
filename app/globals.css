@@ -1096,3 +1096,10 @@ footer > span {
 .journal-archive-month { display:block; list-style:none; }
 .journal-archive-month::-webkit-details-marker { display:none; }
 details[open] > .journal-archive-month { text-decoration:underline; text-underline-offset:.2em; }
+
+.contacts-page .contacts-phone {
+  color: inherit;
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
+  font-weight: 600;
+  white-space: nowrap;
+}

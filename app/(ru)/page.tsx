@@ -173,9 +173,10 @@ export default function Home() {
           <div className="hero-actions">
             <a className="button button-light" href="#services">Наши услуги</a>
             <div className="hero-links">
-              <a className="text-link light-link" href="#process">Как мы работаем <span>↓</span></a>
+              <a className="text-link light-link" href="#process">Как это работает <span>↓</span></a>
               <a className="text-link light-link" href={assetPath("/news/")}>Блог</a>
               <a className="text-link light-link" href="#projects">Проекты</a>
+              <a className="text-link light-link" href={assetPath("/contacts/")}>Контакты</a>
             </div>
           </div>
         </div>
