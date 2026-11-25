@@ -499,6 +499,17 @@ h1 {
   background: linear-gradient(145deg, #585851, #252524);
 }
 
+.project-in-progress.project-with-cover img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  object-position: center 44%;
+}
+
+.project-in-progress.project-with-cover .project-overlay {
+  background: linear-gradient(to bottom, rgb(0 0 0 / 12%), transparent 28%, rgb(0 0 0 / 84%) 100%);
+}
+
 .project-in-progress .project-overlay::before {
   display: block;
   width: 36px;

@@ -70,10 +70,10 @@ const currentProjects: { slug: string; category: string; title: string; descript
     slug: "novoe-letovo",
     category: "В РАБОТЕ",
     title: "ЖК Новое Летово",
-    description: "Капитальный ремонт жилого помещения, квартира 46 м², в процессе выполнения. Фотографии и подробности появятся после завершения этапов работ.",
+    description: "Капитальный ремонт квартиры 46 м². В галерее — санузел, прихожая и детали отделки.",
     image: "/images/novoe-letovo/7488.webp",
-    alt: "",
-    className: "project-in-progress",
+    alt: "Санузел в ЖК Новое Летово",
+    className: "project-in-progress project-with-cover",
   },
 ];
 

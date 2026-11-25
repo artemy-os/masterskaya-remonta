@@ -70,10 +70,10 @@ const currentProjects: { slug: string; category: string; title: string; descript
     slug: "novoe-letovo",
     category: "IN PROGRESS",
     title: "Novoye Letovo Apartments",
-    description: "Full renovation of a 46 m² apartment. Photos and details will follow as work progresses.",
+    description: "Full renovation of a 46 m² apartment. See the bathroom, hallway and finishing details in the gallery.",
     image: "/images/novoe-letovo/7488.webp",
-    alt: "",
-    className: "project-in-progress",
+    alt: "Bathroom in Novoye Letovo Apartments",
+    className: "project-in-progress project-with-cover",
   },
 ];
 
