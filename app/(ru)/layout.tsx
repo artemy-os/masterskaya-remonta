@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://master-rem.com"),
   title: "Мастерская ремонта — создание пространства для вашего комфорта",
   description:
-    "Дизайн, ремонт и комплектация квартир и домов в Москве и Московской области.",
+    "Дизайн, ремонт и комплектация квартир, домов и коммерческих помещений в Москве и Московской области.",
   alternates: {
     canonical: "/",
     languages: { ru: "/", en: "/en/", "x-default": "/" },
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     siteName: "Мастерская ремонта",
     title: "Мастерская ремонта — создание пространства для вашего комфорта",
     description:
-      "Дизайн, ремонт и комплектация квартир и домов в Москве и Московской области.",
+      "Дизайн, ремонт и комплектация квартир, домов и коммерческих помещений в Москве и Московской области.",
   },
   icons: {
     icon: `${basePath}/workshop-icon.svg`,
@@ -44,12 +44,16 @@ export const metadata: Metadata = {
 const organizationData = {
   "@context": "https://schema.org",
   "@type": "HomeAndConstructionBusiness",
+  "@id": "https://master-rem.com/#business",
   name: "Мастерская ремонта",
+  telephone: "+7-999-888-89-69",
+  openingHours: "Mo-Th 10:00-18:00",
+  hasOfferCatalog: {"@type":"OfferCatalog",name:"Виды работ",itemListElement:["Демонтаж и подготовка","Черновые работы","Электромонтаж","Сантехника и водоснабжение","Чистовая отделка","Монтаж и комплектация"].map(name=>({"@type":"Offer",itemOffered:{"@type":"Service",name}}))},
   url: "https://master-rem.com/",
   logo: "https://master-rem.com/images/logo-approved-horizontal.png",
   areaServed: ["Москва", "Московская область"],
   description:
-    "Дизайн, ремонт и комплектация квартир и домов в Москве и Московской области.",
+    "Дизайн, ремонт и комплектация квартир, домов и коммерческих помещений в Москве и Московской области.",
 };
 
 export default function RootLayout({
