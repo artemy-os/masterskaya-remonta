@@ -14,6 +14,7 @@ export default function ContactsPage() {
       <h1>Contacts</h1>
       <p className="project-detail-eyebrow">Phone</p>
       <p className="contacts-phone">8 (999) 888-89-69</p>
+      <p>Messaging apps are the preferred way to reach us.</p>
       <ContactMessengers />
       <p>Monday–Thursday, 10:00–18:00 (Moscow time)</p>
       <a className="project-detail-back" href={basePath + "/contacts/"} hrefLang="ru">Русский</a>
