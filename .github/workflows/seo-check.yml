@@ -1,0 +1,30 @@
+name: SEO build check
+on:
+  pull_request:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run build:pages
+        env:
+          PAGES_BASE_PATH: ""
+          NEXT_PUBLIC_BASE_PATH: ""
+      - run: |
+          python - <<'PY'
+          import pathlib, xml.etree.ElementTree as ET
+          from urllib.parse import urlparse
+          root = pathlib.Path("out")
+          for loc in ET.parse(root / "sitemap.xml").getroot().iter("{http://www.sitemaps.org/schemas/sitemap/0.9}loc"):
+              path = root / urlparse(loc.text).path.strip("/") / "index.html"
+              assert path.is_file(), str(path)
+          assert (root / "robots.txt").is_file()
+          PY
